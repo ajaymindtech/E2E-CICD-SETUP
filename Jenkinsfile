@@ -20,9 +20,9 @@ pipeline{
         stage('Deploy'){
             steps{
                 script {
-                     'kubectl apply -f ./deployment.yaml'
-                     'kubectl get pods'
-                     'kubectl get svc'
+                     kubectl apply -f ./deployment.yaml
+                     kubectl get pods
+                     kubectl get svc
                 }
             }
         }
