@@ -25,15 +25,15 @@ pipeline{
             }
         }
     }
-    post{
-        always{
-           sh 'echo "cicd piprlinr complete"
-        }
-        success{
-           sh 'echo "cicd piprlinr success"
-        }
-        failure{
-           sh 'echo "cicd piprlinr failure" 
-        }
-    }
+    // post{
+    //     always{
+    //        sh 'echo "cicd piprlinr complete"
+    //     }
+    //     success{
+    //        sh 'echo "cicd piprlinr success"
+    //     }
+    //     failure{
+    //        sh 'echo "cicd piprlinr failure" 
+    //     }
+    // }
 }
