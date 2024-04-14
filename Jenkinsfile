@@ -21,6 +21,8 @@ pipeline{
             steps{
                 script {
                      'kubectl apply -f ./deployment.yaml'
+                     'kubectl get pods'
+                     'kubectl get svc'
                 }
             }
         }
