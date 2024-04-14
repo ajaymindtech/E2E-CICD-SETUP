@@ -1,7 +1,5 @@
 pipeline{
-   agent { 
-    label 'linux'
-    }
+    agent any
     environment {
         DOCKER_IMAGE = 'ajdevopssolutions/nodejs-hello-world:latest'
     }
@@ -22,8 +20,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 script {
-                    sh 'kubectl get nodes'
-                    sh 'kubectl apply -f ./deployment.yaml'
+                     'kubectl apply -f ./deployment.yaml'
                 }
             }
         }
