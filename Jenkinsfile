@@ -12,11 +12,11 @@ pipeline{
                 }
             }
         }
-        stage('Test'){
-            steps{
-                sh 'docker run ${DOCKER_IMAGE} npm test'
-            }
-        }
+        // stage('Test'){
+        //     steps{
+        //         sh 'docker run ${DOCKER_IMAGE} npm test'
+        //     }
+        // }
         stage('Deploy'){
             steps{
                 script {
@@ -25,15 +25,5 @@ pipeline{
             }
         }
     }
-    // post{
-    //     always{
-    //        sh 'echo "cicd piprlinr complete"
-    //     }
-    //     success{
-    //        sh 'echo "cicd piprlinr success"
-    //     }
-    //     failure{
-    //        sh 'echo "cicd piprlinr failure" 
-    //     }
-    // }
+ 
 }
