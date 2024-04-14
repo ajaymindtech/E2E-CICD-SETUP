@@ -20,7 +20,8 @@ pipeline{
         stage('Deploy'){
             steps{
                 script {
-                    sh 'kubectl apply -f ./deployment.yml'
+                    sh 'kubectl get nodes'
+                    sh 'kubectl apply -f ./deployment.yaml'
                 }
             }
         }
