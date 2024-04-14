@@ -23,7 +23,7 @@ spec:
           # - Each init container must complete successfully before the next one starts.
       containers:
       - name:  nodejs-hello-world
-        image: nodejs-hello-world:latest
+        image: ajdevopssolutions/nodejs-hello-world:latest
         ports:
         - containerPort:  80
       #   resources:
