@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        DOCKER_IMAGE = 'nodejs-hello-world:latest'
+        DOCKER_IMAGE = 'ajdevopssolutions/nodejs-hello-world:latest'
     }
 
     stages {
